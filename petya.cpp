@@ -1,27 +1,18 @@
-#include <iostream>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    string str1,str2;
-    cin>>str1>>str2;
-    
-    int n1,n2;
-    
-    n1=str1.size();
-    n2=str2.length();
-    if(n1<n2)
-    {
-        cout<<"-1";
-    }
-    
-    else if(n2<n1)
-    {
-        cout<<"1";
-    }
-    else if(n1==n2)
-    {
-       cout<<"0"; 
-    }
+	
+	string su,s1; cin>>su>>s1;
+	transform(su.begin(), su.end(), su.begin(), ::tolower);
+	transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
+	 if (su < s1) 
+        cout << -1;
+     else if (su > s1) 
+        cout << 1;
+     else if (su == s1) 
+        cout << 0;
+	
+	return 0;
 }
