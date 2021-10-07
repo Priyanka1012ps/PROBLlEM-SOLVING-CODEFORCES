@@ -2,21 +2,21 @@
 using namespace std;
 int main()
 {
-    int i,j,n,count=0,temp,min=102 ,max=0,maxi,mini;
+    int i,j,n,min=102 ,max=0,maxi,mini,a;
     cin>>n;
-    int arr[n];
-    for(i=0;i<n;i++)
+    //int arr[n];
+    for(i=1;i<=n;i++)
     {
-        cin>>arr[i];
-        if(arr[i]>max)
+        cin>>a;
+        if(a>max)
         {
-            max=arr[i];
+            max=a;
         
             maxi=i;
         }
-         if(arr[i]<=min)
+         if(a<=min)
         {
-            min=arr[i];
+            min=a;
         
             mini=i;
         }
@@ -25,8 +25,9 @@ int main()
     {
         cout<<(maxi-1)+(n-mini)-1;
     }
-        else if(mini>max)
+        else 
         {
         cout<<(maxi-1)+(n-mini);
     }
+    return 0;
 }
