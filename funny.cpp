@@ -38,5 +38,5 @@ int main()
     cout<<"funny";
     else
     cout<<"not funny";
-    return 0 ;
+    return 0 
 }
